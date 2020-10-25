@@ -1,0 +1,144 @@
+.border-Rad {
+  border-radius: 5px;
+}
+
+.align-Center {
+  text-align: center;
+}
+
+.flex-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding-10px {
+  padding: 10px;
+}
+
+.width-65 {
+  width: 65%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("/imgs/todo01.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  transition: all 1s ease;
+  overflow: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  min-height: inherit;
+}
+
+.container {
+  width: 1200px;
+  padding-top: 100px;
+  color: #fff;
+}
+
+.container h1 i,
+.container h1 span {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.container .task-form {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+
+.container .task-form .my-input {
+  padding: 8px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+}
+
+.container .task-form .add-butt {
+  color: #28a745;
+  transition: transform 1s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  right: 18.5%;
+}
+
+.container .task-form .add-butt:hover {
+  transform: rotate(360deg);
+}
+
+.container .buttons {
+  justify-content: space-between;
+  margin: auto;
+}
+
+.container .filter {
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.stats {
+  margin: auto;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.stats span {
+  padding: 5px 10px;
+  background-color: #000;
+  border-radius: 50%;
+  font-size: 14px;
+}
+
+.container .task-status {
+  margin: 30px auto;
+  height: 50px;
+}
+
+.container .task-status > div {
+  margin: 10px auto;
+}
+
+.container .displayed-tasks {
+  margin: 10px auto;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.container .displayed-tasks:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.done-task {
+  text-decoration: line-through;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.container .displayed-tasks .delete {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #dc3545;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(60deg);
+  opacity: 0;
+}
+
+.container .displayed-tasks .delete:hover {
+  transform: rotate(360deg);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/newToDo.css" />
+    <link rel="stylesheet" href="./css/animate.css "/>
+    <title>New TODO List</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="container">
+
+        <h1 class="align-Center wow slideInLeft"><i class="fas fa-list"></i> Abdo's <span>ToDo</span> List</h1>
+        
+
+        <form class = 'task-form flex-elements width-65 wow slideInRight'>
+          <input type="text" id="task-input" class="my-input border-Rad width-65" placeholder="Add a New Task">
+          <div class="add-butt"
+              ><i class="fas fa-plus fa-2x add-Icon"></i>
+          </div>
+          
+        </form>
+
+        <div class="buttons flex-elements width-65 wow bounceInDown">
+          <span class="btn btn-primary done-all"
+            >Done All <i class="fas fa-check"></i
+          ></span>
+
+          <span class="btn btn-warning undo"
+            >Undo <i class="fas fa-undo"></i></span>
+
+          <span class="btn btn-danger delete-all"
+            >Delete All <i class="fas fa-trash"></i
+          ></span>
+          
+          
+          
+        </div>
+
+        <div class="stats width-65 flex-elements">
+          <div class="btn btn-info tasksCount wow slideInLeft">Tasks: <span class="tasks-count">0</span></div>
+          <div class="btn btn-primary done wow slideInRight">Done: <span class="tasks-Done">0</span></div>
+        </div>
+         <div class="task-status width-65 wow slideInLeft">
+         </div> 
+
+         
+
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/newToDo.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
+
