@@ -145,7 +145,7 @@ navOptions.forEach(option => {
 })
 
 // looping random backgroung images
-let bgArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg", "08.jpg", "09.jpg", "10.jpg", ];
+let bgArray = ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg"];
 
 bgImages.style.backgroundImage = 'url("/images/01.jpg")';
 
