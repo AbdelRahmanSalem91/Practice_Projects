@@ -84,19 +84,6 @@ body {
   outline: none;
 }
 
-.stats {
-  margin: auto;
-  justify-content: space-between;
-  padding: 10px 0;
-}
-
-.stats span {
-  padding: 5px 10px;
-  background-color: #000;
-  border-radius: 50%;
-  font-size: 14px;
-}
-
 .container .task-status {
   margin: 30px auto;
   height: 50px;

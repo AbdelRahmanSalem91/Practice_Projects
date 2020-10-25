@@ -6,7 +6,6 @@ let container = document.querySelector(".container"),
   doneAllButton = document.querySelector(".buttons .done-all"),
   undoButton = document.querySelector(".buttons .undo"),
   deleteAllButton = document.querySelector(".buttons .delete-all"),
-  tasksCount = document.querySelector(".container .stats .tasksCount .tasks-count"),
   doneTasks = document.querySelector(".container .stats .done.tasks-done"),
   addedTask = document.querySelector(".displayed-tasks"),
   taskStatus = document.querySelector(".task-status");
@@ -30,7 +29,6 @@ addEventListener("click", function (e) {
   // for Done Task
   if (e.target.classList.contains("displayed-tasks")) {
     e.target.classList.toggle("done-task");
-    tasksStats();
   }
   // for Done Task
   if (e.target.classList.contains("delete")) {
@@ -41,7 +39,6 @@ addEventListener("click", function (e) {
     if (document.querySelectorAll(".displayed-tasks .added-task").length == 0) {
       noTasksToShow();
     }
-    tasksStats();
     });
     
   }
@@ -110,7 +107,6 @@ function doneAllTasks() {
     for (let i = 0; i < tasksArray.length; i++) {
       tasksArray[i].classList.add("done-task");
     }
-    tasksStats();
   } else {
     swal("There are no Tasks to be Done!");
   }
@@ -127,7 +123,6 @@ function deleteAllTasks() {
       
       
     }
-    tasksStats();
     removeAllTasksFromLocalStorage();
   } else {
     swal("There are no Tasks to be Deleted!");
@@ -146,17 +141,6 @@ function unDoButton() {
       tasksArray[i].classList.remove("done-task");
     }
   }
-}
-
-function tasksStats(){
-  if(document.querySelectorAll(".displayed-tasks .added-task").length){
-    tasksCount.innerHTML = document.querySelectorAll(".displayed-tasks .added-task").length;
-  }
-
-  if(document.querySelectorAll(".done-task").length){
-    doneTasks.innerHTML = document.querySelectorAll(".displayed-tasks .done-task").length;
-  }
-  
 }
 
 // Creating No Tasks to Show Message
